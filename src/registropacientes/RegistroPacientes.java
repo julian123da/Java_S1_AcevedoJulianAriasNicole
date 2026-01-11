@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RegistroPacientes {
     
-    static int validacion (int minvalor, int maxvalor, String mensaje) {
+    /*static int validacion (int minvalor, int maxvalor, String mensaje) {
     boolean validar = false;
     int op = 0;
     do {
@@ -17,9 +17,11 @@ public class RegistroPacientes {
         validar = true;
         
     } while (validar == false); 
-    }
+    }*/
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int op;
         do {
             System.out.println("""
                                **************************
@@ -36,23 +38,19 @@ public class RegistroPacientes {
                                *        4) Salir        *
                                **************************
                                """);
-
-            int op = new Scanner (System.in).nextInt();
+            op = sc.nextInt();
             
             while (op<1 || op>4){
                 System.out.println("""
                                    No es posible validar la opción ingresada.
                                    Por favor, Escribe el número de la opción
                                    1, 2, 3 o 4""");
+                op = sc.nextInt();
                 
             }
             
         } while (op != 4);
-        System.out.println("""
-                                   No es posible validar la opción ingresada.
-                                   Por favor, Escribe el número de la opción
-                                   1, 2, 3 o 4""");
-    }*/
-        
+        System.out.println("Gracias por tu visita, esperamos verte pronto!\nTrabajamos para mejorar nuestros servicios.");
+    }
     
 }
