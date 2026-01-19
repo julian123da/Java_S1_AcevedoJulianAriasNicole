@@ -1,0 +1,2 @@
+hospitaljn.Controladores
+Controladores.Funciones
