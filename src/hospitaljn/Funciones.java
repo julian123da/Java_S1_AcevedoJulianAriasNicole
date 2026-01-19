@@ -3,12 +3,17 @@ package Controladores;
 import Modelo.Persona;
 import java.util.Scanner;
 
+
+
+
 public class Funciones {
  Validaciones v = new Validaciones();
     Persona p1 = null;
     Persona p2 = null;
     Persona p3 = null;
     Persona p4 = null;
+    
+    
 
     public void agregar_paciente() {
         System.out.println("Ingrese el nombre del paciente ");
@@ -42,6 +47,8 @@ public class Funciones {
         }
     }
 
+    
+    
     public void visualizar() {
         visualizar_pacientes(p1);
         visualizar_pacientes(p2);
